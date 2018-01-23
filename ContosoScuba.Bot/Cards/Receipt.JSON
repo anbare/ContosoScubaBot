@@ -7,7 +7,6 @@
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "type": "AdaptiveCard",
         "version": "1.0",
-        "backgroundImage": "http://adaptivecards.io/content/AlkiBeach.jpg",
         "body": [
           {
             "type": "Container",
@@ -26,7 +25,8 @@
                 "text": "Monday, November 20th",
                 "size": "normal",
                 "wrap": true,
-                "maxLines": 3
+                "maxLines": 3,
+                "separation": "none"
               },
               {
                 "type": "FactSet",
@@ -46,6 +46,69 @@
                   {
                     "title": "Experience",
                     "value": "3 experienced, 1 new"
+                  }
+                ]
+              },
+
+              {
+                "type": "TextBlock",
+                "text": "Attendees",
+                "weight": "bolder",
+                "isSubtle": false
+              },
+              {
+                "type": "TextBlock",
+                "text": "Carmen Forsmann",
+                "separator": true,
+                "separation": "none"
+              },
+              {
+                "type": "TextBlock",
+                "text": "Andrew Bares",
+                "spacing": "none",
+                "separation": "none"
+              },
+              {
+                "type": "TextBlock",
+                "text": "Matt Hidinger",
+                "spacing": "none",
+                "separation": "none"
+              },
+              {
+                "type": "TextBlock",
+                "text": "Lei Xu",
+                "spacing": "none",
+                "separation": "none"
+              },
+
+              {
+                "type": "ColumnSet",
+                "spacing": "medium",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "width": "1",
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Total",
+                        "size": "medium",
+                        "isSubtle": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Column",
+                    "width": 1,
+                    "items": [
+                      {
+                        "type": "TextBlock",
+                        "horizontalAlignment": "right",
+                        "text": "$759.99",
+                        "size": "medium",
+                        "weight": "bolder"
+                      }
+                    ]
                   }
                 ]
               }
