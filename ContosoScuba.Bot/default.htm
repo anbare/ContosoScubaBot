@@ -9,6 +9,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
+        #botchatPane {
+            display: none;
+        }
+
+        @media screen and (min-width: 500px) {
+            #botchatPane {
+                height: 600px;
+                width: 400px;
+                bottom: 1px;
+                left: calc(100vw - 400px);
+                background: white;
+                position: fixed;
+                display: inline-block;
+            }
+        }
+
         .ac-container.ac-selectable:hover {
             background-color: rgba(0, 0, 0, 0.1);
         }
@@ -96,7 +113,7 @@
         </div>
     </div>
 
-    <div id="botchatPane" class="w3-display-container w3-display-bottomleft w3-card-2 w3-animate-right" style="height:600px; width: 400px; bottom: 1px; left: calc(100vw - 400px); background: white; position: fixed; display: inline-block;"></div>
+    <div id="botchatPane" class="w3-display-container w3-display-bottomleft w3-card-2 w3-animate-right"></div>
 
     <!-- Modal -->
     <div id="id01" class="w3-modal">
